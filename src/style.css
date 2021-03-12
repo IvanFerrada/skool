@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+.wrap{
+    clear: both;
+    margin: 0%;
+    padding: 0%;
+}
+/* @font-face {
+    font-family: "jeyByGOOGLE";
+    src: url("//fonts/Roboto_Slab/static/RobotoSlab-SemiBold.ttf");
+  } */
+
+.nav{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(26, 25, 25, 0.5);
+    
+}
+
+.image{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 30px;
+    top: 10%;
+    
+
+}
+.image > img{
+    width: 50px;
+    height: 40px;
+    
+}
+
+.nav ul{
+    margin-left: 100px;
+}
+
+.nav ul > li{
+    color: white;
+    font-family: "jeyByGOOGLE";
+    font-size: 14px;
+    float: left;
+    margin: 10px;
+    padding: 6px;
+    list-style: none;       
+}
+.nav ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul > li a:hover{
+    color:gray;
+    border-top: black;
+}
+
+
+/* slider */
+
+.slider{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+/* .slider > img{
+    height: 600px;
+    border: 1px red solid;
+} */
+
+
+
+.nosotros{
+    width: 100%;
+    height: 600px;
+    
+}
+
+
+section h1{
+    font-family: "jeyByGOOGLE";
+    font-size: 50px;
+    color: gray;
+    margin: 100px;
+    overflow: hidden;
+    visibility: hidden;
+    
+}
+
+
+
+  @keyframes slidein{
+    0%{
+        transform: translate(100%);
+    }
+  }
+
+
+  .portada{
+      position: absolute;
+      width: 38%;
+      text-align: center;
+      margin-left: 80px;
+    
+
+  }
+
+  .portada img{
+        overflow: hidden;
+        border-radius: 20px;
+        margin-left: 10%;
+  }
+
+
+  .nosotros{
+      width: 100%;
+  }
+
+  .nosotros  .descripcion{
+    position: relative;
+    width: 500px;
+    height: 100px;
+    left: 50%;  
+    overflow: hidden;
+    visibility: hidden;
+    font-family: "jeyByGOOGLE";
+    font-size: 12px;
+    color: gray;
+  }
+
+
+    @keyframes descripcion{
+        0%{
+            transform: translateY(200%);
+        }
+    }
+
+
+
+
+    .contacto{
+        width: 100%;
+        height: 500px;
+        padding: 200px;
+        text-align: center;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        background-color: rgba(26, 25, 25, 0.5);
+    }
+
+    .contacto .formInput{
+        position: relative;
+        width: auto;
+        max-width:400px;
+        min-width: 300px;
+        height: 400px;
+        text-align: center;
+        float: left;
+        padding: 20px;
+        border: black solid 1px;
+        margin-left: -10%;
+        border-radius: 5px;
+        background-color: hsl(210deg 25% 19%);
+        background-color: rgba(26, 25, 25, 0.5);
+    }
+
+    .contacto .formInput .text{
+        display: inline-block;
+        width: 60%;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 2px;
+        
+    }
+    .contacto .formInput .text h1{
+        text-align: start;
+        color: white;
+        font-size: 25px;
+        font-family: "jeyByGOOGLE";
+
+    }
+
+    .contacto  input[type=email]{
+        width: 60%;
+        height: 20px;
+        text-align: center;
+        padding-left:  5px;
+        padding-right: 5px;
+        margin-top: 20px;
+        background-color: hsl(218deg 35% 34%);
+      
+        
+    }
+    .contacto  input[type=text]{
+        width: 60%;
+        height: 100px;
+        text-align: center;
+        background-color: hsl(218deg 35% 34%);
+        color: gray;
+        margin-top: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+
+    .contacto  button[type=button]{
+        /* display: inline-block; */
+        width: 60%;
+        height: 40px;
+        border: 1px solid hsl(222deg 73% 45%);
+        color: white;
+        background-color: hsl(222deg 73% 45%); 
+        margin-top: 20px;
+        padding-right: 5px;
+        padding-left:  5px;
+    }
+
+    .contacto .maps{
+        display: inline-flex;
+        position: absolute;
+        width: auto;
+        height: 500px;;
+        margin-top: -240px;
+        margin-left: 50%;
+        border: 1px solid red;
+        
+    }
+    .contacto .maps iframe{
+        width: 600px;
+        max-width: 600px;
+        min-width: 200px;
+        
+    }
+ 
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: white;
+    background: rgb(0,0,255);
+    background-color: rgba(26, 25, 25, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+.footer > footer{
+    font-family: "jeyByGOOGLE";
+    font-size: 12px;
+    text-align: center;
+   
+}
