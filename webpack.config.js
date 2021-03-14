@@ -27,21 +27,38 @@ module.exports = {
           {
           loader:MiniCssExtractPlugin,loader,
           options:{
-            publicPath:"./"
+            publicPath:"./",
           },
           },
           "css-loader",
-        ]
+        ],
         // use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.(jpeg|jpg|png|gif|svg|webp)$/i,
+        test: /\.(jpe?g|png|gif|svg|webp)$/i,
         use: ["file-loader?name=assets/[name].[ext]"],
       },
       {
         test: /\.(ttf)$/i,
         use: ["file-loader?name=assets/[name].[ext]"],
       },
+
+      // { 
+      //   test: /\.(jpe?g|png|gif|svg|webp)$/i,
+      //   use: [
+      //     'file-loader',
+      //    {
+      //     loader: 'image-webpack-loader',
+      //       options: {
+      //       bypassOnDebug: true, // webpack@1.x
+      //       disable: true, // webpack@2.x and newer
+      //        },
+      //      },
+      //    ],
+      //  },
+
+
+
     ],
   },
   plugins: [
